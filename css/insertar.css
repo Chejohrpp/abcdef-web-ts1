@@ -1,0 +1,46 @@
+.cont{
+    margin: 0 30rem;
+    display: block;
+}
+
+.info{
+    padding: 1rem 0;
+    display:block;
+}
+
+h1{
+    font-family: 'Cabin', sans-serif;
+    color: #999;
+}
+
+.send{
+    cursor: pointer;
+    background: white;
+    border-radius: 7px;
+    box-shadow: rgb(105, 9, 117) 0px 0px 1px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.send:active{
+    background:  rgb(105, 9, 117);
+    color: white;
+}
+label{
+    font-size: 18.7px;
+}
+label, .opcional{
+    color: #999;
+}
+
+.dato{
+    border-radius: 3px;
+    outline: none;
+    border: solid 2px #ccc;
+    padding: 5px;
+    width: 260px;
+}
+
+.dato:focus{
+    border-color: rgb(105, 9, 117);
+}

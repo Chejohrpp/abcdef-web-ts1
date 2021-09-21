@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor{
+    width: 100%;
+    background: black;
+}
+
+.navbar{
+    width: 88%;
+    margin: auto;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 130px;
+    cursor: pointer;
+    font-family: 'Cabin', sans-serif;
+    color: white;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Cabin', sans-serif;
+}
+
+/*Animacion de linea saliendo*/
+.navbar ul li::before {
+    content: "";
+    height: 3px;
+    width: 0%;
+    background: rgb(117, 50, 205);
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    transition: 0.3s ease-out;
+}
+
+.navbar ul li:hover::before{
+    width: 100%;
+}
+/*estilo a la tabla*/
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
