@@ -35,7 +35,7 @@
             <td><?php echo $mostar['semana']?></td>
             <td><?php echo $mostar['fecha_inicio']?></td>
             <td><?php echo $mostar['fecha_final']?></td>
-            <td><?php echo $mostar['descripcion']?></td>
+            <td><?php if($mostar['descripcion'] != "NULL"){ echo $mostar['descripcion']; }?></td>
         </tr>
         <?php 
             }

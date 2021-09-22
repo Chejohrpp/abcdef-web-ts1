@@ -56,7 +56,7 @@
                 <textarea name="descripcion" id="descripcion" cols="24" rows="2" class="dato"><?php if($mostar['descripcion'] != "NULL"){ echo $mostar['descripcion']; }?></textarea>
             </div>
             <input type="hidden" name="codigo" id="codigo" value = "<?php  echo $mostar['codigo'] ?>" >
-            <div class="info"><input type="submit" value="Ingresar" class="send"></div>
+            <div class="info"><input type="submit" value="Modificar" class="send"></div>
     </div>
 </form>
 <?php
