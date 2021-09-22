@@ -15,15 +15,18 @@
         $sqlTodos = "SELECT * FROM temas";
         $result = mysqli_query($db,$sqlTodos);        
     ?>
-
-    <table>
+    <input id="buscar" type="text" class="buscar" placeholder="Escriba algo para buscar" />
+    <table id="tabla">
+        <thead>
         <tr>
-            <td>Nombre</td>
-            <td>Semana</td>
-            <td>Fecha de inicio</td>
-            <td>Fecha de finalizacion</td>
-            <td>Descripcion</td>
+            <th>Nombre</th>
+            <th>Semana</th>
+            <th>Fecha de inicio</th>
+            <th>Fecha de finalizacion</th>
+            <th>Descripcion</th>
         </tr>
+        </thead>
+        <tbody>
         <?php 
             while($mostar = mysqli_fetch_array($result)){
         ?>
@@ -37,6 +40,8 @@
         <?php 
             }
         ?>
+        </tbody>
     </table>
+    <script src="js/buscar.js"></script>
 </body>
 </html>

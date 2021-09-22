@@ -69,3 +69,13 @@ table {
   tr:nth-child(even) {
     background-color: #dddddd;
   }
+
+.buscar{
+    width: 95%;
+    padding: 10px;
+    margin: 17px 0.5rem;
+}
+
+.buscar:focus{
+    border-color: rgb(105, 9, 117);
+}
